@@ -1,0 +1,48 @@
+
+
+
+.Main
+{
+
+margin: auto;
+  text-align: center;
+  margin-top: 50px;
+    height: 550px;
+  width: 350px;
+  background-color: #f8c3d3;
+  /* #3a3b78;*/
+  box-shadow: 0px 0px 10px rgb(83, 48, 69) ;
+  padding:15px 50px ;
+}
+.bal
+{
+  text-align: left;
+  color: #15121b;
+}
+
+.track
+{
+  color:#15121b;
+}
+.expCont
+{
+  background-color: #f8ccd9;
+  color: #15121b;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 0px 10px rgb(83, 48, 69) ;
+}
+.his
+{
+  text-align: left;
+}
+
+.trs
+{
+  text-align: left;
+}
+hr
+{
+  color: rgb(143, 84, 12);
+}
