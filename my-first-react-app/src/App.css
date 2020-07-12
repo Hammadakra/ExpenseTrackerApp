@@ -1,16 +1,12 @@
-
-
-
 .Main
 {
 
-margin: auto;
+  margin: auto;
   text-align: center;
   margin-top: 50px;
-    height: 550px;
+  height: 750px;
   width: 350px;
   background-color: #f8c3d3;
-  /* #3a3b78;*/
   box-shadow: 0px 0px 10px rgb(83, 48, 69) ;
   padding:15px 50px ;
 }
@@ -45,4 +41,25 @@ margin: auto;
 hr
 {
   color: rgb(143, 84, 12);
+}
+.tranList
+{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.tranList > li 
+{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 5px #1b1820;
+  padding: 5px 2px;
+  margin:  10px 10px;
+}
+.traForm input
+{
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px 0;
 }

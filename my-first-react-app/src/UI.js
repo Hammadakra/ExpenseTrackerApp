@@ -3,7 +3,7 @@ import React from 'react';
 function Child() {
     let Transaction = [{amount : 500, desc: 'Case'},
     {amount : 40, desc: "IT"},
-    {amount : -30 ,desc: "Educaton"}]
+    {amount : -30 ,desc: "Education"}]
   return (
  <div className ='Main'>
     
@@ -18,7 +18,7 @@ function Child() {
 
     <div className="expCont">
         <h3>Income <br></br> $23</h3>
-        <h3>Expense <br></br> $23</h3>
+        <h3>Expense <br></br> $263</h3>
 
     </div>
         <div className='his'>
@@ -27,23 +27,21 @@ function Child() {
         <hr/>
         </div>
          <ul className ="tranList">
-            {Transaction.map((tranObj),ind)= >
-            {
-                return (<li>
-                    <span>{tranObj.desc}</span>
-                    <span>{tranObj.amount}</span>
-                    
-                    
-                    )
+          {Transaction.map((transObj,ind)=>{
+          
+          return(<li>
 
-            }}
-
-         </ul>
+          <span>{transObj.desc}</span>
+          <span>{transObj.amount}</span>
+          </li> )
+       
+    } ) }
+          </ul>
         <div className ='trs'>
             <h3> Add new Transaction</h3>
             <hr/>
 
-            <form>
+            <form className='traForm'>
                 <lable>
                 Enter Description <br></br>
                 <input type='text'></input>
@@ -53,6 +51,7 @@ function Child() {
                 Enter Amount <br></br>
                 <input type='text'></input>
                 </lable>
+                <br></br>
                 <br></br>
             <input type ='submit' value ="Add Transaction"/>
              </form>
