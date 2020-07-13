@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { TransactionContext } from './TransContext';
 
 function Child() {
-    let Transaction = [{amount : 500, desc: 'Case'},
-    {amount : 40, desc: "IT"},
-    {amount : -30 ,desc: "Education"}]
+    let Transaction = useContext(TransactionContext);
   return (
  <div className ='Main'>
     
