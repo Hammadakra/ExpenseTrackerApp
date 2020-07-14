@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { TransactionContext } from './TransContext';
 
 function Child() {
-    let Transaction = useContext(TransactionContext);
+    let {Transaction} = useContext(TransactionContext);
   return (
  <div className ='Main'>
     
@@ -28,7 +28,7 @@ function Child() {
          <ul className ="tranList">
           {Transaction.map((transObj,ind)=>{
           
-          return(<li>
+          return(<li key={ind}>
 
           <span>{transObj.desc}</span>
           <span>{transObj.amount}</span>

@@ -9,9 +9,8 @@ const initialTrans = [
 
 export const TransactionContext = createContext(initialTrans);
 
-let [state,dispatch] = useReducer (createContext,initialTrans);
 
-export const TransactionProviderr = ({}) => 
+export const TransactionProviderr = ({Children}) => 
 {
     let [state ,dispatch] = useReducer(TranscationReducer,initialTrans);
 
